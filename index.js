@@ -9,23 +9,23 @@
 
 // ***** Methode 1 *****
 
-window.addEventListener("mousemove", (e) => {
-    mouse1.style.left = e.pageX + "px";
-    mouse1.style.top = e.pageY + "px";
+// window.addEventListener("mousemove", (e) => {
+//     mouse1.style.left = e.pageX + "px";
+//     mouse1.style.top = e.pageY + "px";
 
-    mouse2.style.left = e.pageX + "px";
-    mouse2.style.top = e.pageY + "px";
+//     mouse2.style.left = e.pageX + "px";
+//     mouse2.style.top = e.pageY + "px";
 
-    mouse3.style.left = e.pageX + "px";
-    mouse3.style.top = e.pageY + "px";
-});
+//     mouse3.style.left = e.pageX + "px";
+//     mouse3.style.top = e.pageY + "px";
+// });
 
 // ***** Methode 2 *****
-// const mouses = document.querySelectorAll(".cercle");
+const mouses = document.querySelectorAll(".cercle");
 
-// window.addEventListener("mousemove", (e) => {
-//     mouses.forEach((mouse) => {
-//         mouse.style.left = e.x + "px";
-//         mouse.style.top = e.y + "px";
-//     });
-// });
+window.addEventListener("mousemove", (e) => {
+    mouses.forEach((mouse) => {
+        mouse.style.left = e.x + "px";
+        mouse.style.top = e.y + "px";
+    });
+});
